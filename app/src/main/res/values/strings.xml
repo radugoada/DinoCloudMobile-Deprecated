@@ -1,3 +1,43 @@
 <resources>
-    <string name="app_name">DinoCloudMobile</string>
+    <string name="app_name">DinoCloud</string>
+
+    <!-- LOGIN PAGE -->
+    <string name="image_login">Image_login</string>
+    <string name="login_image_logo">Login Image</string>
+
+    <string name="login_input_email">Email</string>
+    <string name="login_input_password">Password</string>
+
+    <string name="btn_login">LOGIN</string> <!-- Login button -->
+    <string name="please_insert_your_credentials_to_login">Please insert your credentials to login!</string>
+    <string name="don_t_have_an_account_sign_up">No account? Sign up HERE</string>
+
+
+
+    <!-- REGISTER PAGE -->
+    <string name="btn_sign_up">REGISTER</string>
+    <string name="register_activity_logo">register_activity_logo</string>
+    <string name="go_back_to_login">Go back</string>
+    <string name="dinocloud_register">Dinocloud | Register</string>
+    <string name="dinocloud_register_logo">Image_register</string>
+
+    <string name="title_activity_user">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+   <!-- <string name="action_permission">Grant Permission</string>
+    <string name="action_updates">Check for updates</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_about">About</string>
+    <string name="nav_profile">My Profile</string>
+    <string name="aboutText">TextView</string>
+    <string name="contact">Contact</string>
+    <string name="upload_button">Upload</string>
+    <string name="title_my_files">Cloud files list</string>
+    <string name="upload_menu_button">Upload</string>
+    <string name="nav_files">My Files</string> -->
+
 </resources>
