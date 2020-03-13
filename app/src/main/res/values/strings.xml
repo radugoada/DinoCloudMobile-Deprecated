@@ -13,12 +13,10 @@
     <string name="btn_reset_password">Forgot your password?</string>
 
 
-
     <!-- REGISTER PAGE -->
     <string name="btn_sign_up">REGISTER</string>
     <string name="register_activity_logo">register_activity_logo</string>
     <string name="dinocloud_register">Dinocloud | Register</string>
-
 
 
     <string name="title_activity_user">Dashboard</string>
@@ -29,6 +27,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="back_to_login"><![CDATA[<< Back]]></string>
     <string name="btn_register">REGISTER</string>
+
     <!--
      <string name="back_to_login"><![CDATA[<< Back]]></string>
     -->
