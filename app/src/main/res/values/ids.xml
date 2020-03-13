@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id" />
+    <item name="btn_signup_here" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="btn_login" type="id" />
+</resources>

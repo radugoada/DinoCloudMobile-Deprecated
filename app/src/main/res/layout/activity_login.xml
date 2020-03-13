@@ -1,138 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!--
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="345dp">
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:hint="@string/hint_email"
-            android:inputType="textEmailAddress"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="435dp">
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:hint="@string/hint_password"
-            android:inputType="textPassword"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
-    </android.support.design.widget.TextInputLayout>   -->
 
 
     <ImageView
         android:id="@+id/login_logo_image"
         android:layout_width="166dp"
         android:layout_height="163dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="@string/login_image_logo"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.492"
         app:srcCompat="@drawable/dinocloud_logo_claw" />
 
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="76dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reset_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_logo_image"
+        app:layout_constraintVertical_bias="0.154" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
-        tools:layout_editor_absoluteX="0dp">
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="325dp"
+        android:layout_height="59dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reset_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.094" />
 
-        <EditText
-            android:id="@+id/login_input_email"
-            android:layout_width="410dp"
-            android:layout_height="45dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/login_input_email"
-            android:inputType="textEmailAddress"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            tools:layout_conversion_absoluteHeight="45dp"
-            tools:layout_conversion_absoluteWidth="363dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        android:layout_width="410dp"
-        android:layout_height="45dp"
+    <Button
+        android:id="@+id/btn_signup_here"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="340dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/btn_signup_here"
+        android:textColor="#FF8F00"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <EditText
-            android:id="@+id/login_input_password"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/login_input_password"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
-
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintVertical_bias="0.833" />
 
     <Button
         android:id="@+id/btn_login"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="226dp"
-        android:layout_height="45dp"
-        android:background="@android:color/holo_blue_dark"
-        android:enabled="false"
-        android:fontFamily="monospace"
-        android:text="@string/btn_login"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_link_signup"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="164dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="144dp"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reset_password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.615" />
 
-    <Button
-        android:id="@+id/btn_link_signup"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="340dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/don_t_have_an_account_sign_up"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
